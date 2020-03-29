@@ -5,6 +5,7 @@ Download Pyhton from visualstudio code extensions
 ## Tricks [on Windows OS]
 
 ```
+
 -- backend folder right click open in terminal
 
 python -m pip install --upgrade pip
