@@ -23,7 +23,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
 
-    'articles'
+    'articles',
+    'bulletins',
+    'priorities',
+    'states',
+    'btypes'
 ]
 
 MIDDLEWARE = [

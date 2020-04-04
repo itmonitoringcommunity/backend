@@ -10,14 +10,9 @@
 -- backend folder right click open in terminal
 
 python -m pip install --upgrade pip
-pip list
-pip install pep8
-pip install autopep8
-pip install pylint
-pip install django
-pip install djangorestframework
+python -m pip install -r requirements.txt
 
-virtual env
+python -m venv env
 . env/Scripts/activate.bat
 
 python manage.py makemigrations
