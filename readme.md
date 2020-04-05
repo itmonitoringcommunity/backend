@@ -1,3 +1,7 @@
+## DESCRIPTION
+
+This application includes web api of bulletin with django rest-framework. It is possible to integrate different development platforms.
+
 ## FIRST
 
 * Configure system environment on Windows OS

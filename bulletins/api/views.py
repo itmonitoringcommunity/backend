@@ -19,13 +19,13 @@ from .serializers import BulletinSerializer
 class BulletinListView(ListAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class BulletinDetailView(RetrieveAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class BulletinCreateView(CreateAPIView):
@@ -41,6 +41,11 @@ class BulletinUpdateView(UpdateAPIView):
 
 
 class BulletinDeleteView(DestroyAPIView):
+    queryset = Bulletin.objects.all()
+    serializer_class = BulletinSerializer
+    permission_classes = (permissions.IsAuthenticated, )
+
+class BulletinSendView(RetrieveAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
     permission_classes = (permissions.IsAuthenticated, )

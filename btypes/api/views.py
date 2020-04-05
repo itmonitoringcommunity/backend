@@ -19,13 +19,13 @@ from .serializers import BTypeSerializer
 class BTypeListView(ListAPIView):
     queryset = BType.objects.all()
     serializer_class = BTypeSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class BTypeDetailView(RetrieveAPIView):
     queryset = BType.objects.all()
     serializer_class = BTypeSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class BTypeCreateView(CreateAPIView):

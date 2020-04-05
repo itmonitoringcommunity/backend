@@ -19,13 +19,13 @@ from .serializers import PrioritySerializer
 class PriorityListView(ListAPIView):
     queryset = Priority.objects.all()
     serializer_class = PrioritySerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class PriorityDetailView(RetrieveAPIView):
     queryset = Priority.objects.all()
     serializer_class = PrioritySerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class PriorityCreateView(CreateAPIView):

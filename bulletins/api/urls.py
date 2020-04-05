@@ -12,7 +12,8 @@ from .views import (
     BulletinDetailView,
     BulletinCreateView,
     BulletinUpdateView,
-    BulletinDeleteView
+    BulletinDeleteView,
+    BulletinSendView
 )
 
 urlpatterns = [
@@ -20,5 +21,7 @@ urlpatterns = [
     path('create/', BulletinCreateView.as_view()),
     path('<pk>', BulletinDetailView.as_view()),
     path('<pk>/update/', BulletinUpdateView.as_view()),
-    path('<pk>/delete/', BulletinDeleteView.as_view())
+    path('<pk>/delete/', BulletinDeleteView.as_view()),
+
+    path('<pk>/send/', BulletinSendView.as_view())
 ]

@@ -19,13 +19,13 @@ from .serializers import StateSerializer
 class StateListView(ListAPIView):
     queryset = State.objects.all()
     serializer_class = StateSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class StateDetailView(RetrieveAPIView):
     queryset = State.objects.all()
     serializer_class = StateSerializer
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.IsAuthenticated, )
 
 
 class StateCreateView(CreateAPIView):

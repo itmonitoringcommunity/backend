@@ -6,4 +6,4 @@ from priorities.models import Priority
 class PrioritySerializer(serializers.ModelSerializer):
     class Meta:
         model = Priority
-        fields = ('id', 'title', 'content')
+        fields = ('id', 'name', 'description','color','is_deleted')
