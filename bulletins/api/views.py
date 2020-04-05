@@ -4,6 +4,14 @@
 #     serializer_class = BulletinSerializer
 #     queryset = Bulletin.objects.all()
 
+import sys, os
+
+sys.path.insert(0, os.path.join(
+    os.path.dirname(os.path.abspath('pylibs')), 'pylibs'))
+
+from pylibs import CustomBulletin
+blt = CustomBulletin()
+
 from rest_framework import permissions
 from rest_framework.generics import (
     ListAPIView,
@@ -12,6 +20,11 @@ from rest_framework.generics import (
     DestroyAPIView,
     UpdateAPIView
 )
+from django.http import Http404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+
 from bulletins.models import Bulletin
 from .serializers import BulletinSerializer
 
@@ -45,7 +58,31 @@ class BulletinDeleteView(DestroyAPIView):
     serializer_class = BulletinSerializer
     permission_classes = (permissions.IsAuthenticated, )
 
-class BulletinSendView(RetrieveAPIView):
-    queryset = Bulletin.objects.all()
-    serializer_class = BulletinSerializer
-    permission_classes = (permissions.IsAuthenticated, )
+class BulletinSendView(APIView):
+    """
+    Retrieve, update or delete a snippet instance.
+    """
+    def get_object(self, pk):
+        try:
+            return Bulletin.objects.get(pk=pk)
+        except Snippet.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        bulletin = self.get_object(pk)
+        blt.sendbulletin(bulletin)
+        serializer_class = BulletinSerializer
+        return Response(serializer_class.data)
+
+    def put(self, request, pk, format=None):
+        bulletin = self.get_object(pk)
+        serializer_class = BulletinSerializer(bulletin, data=request.data)
+        if serializer_class.is_valid():
+            serializer_class.save()
+            return Response(serializer_class.data)
+        return Response(serializer_class.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        bulletin = self.get_object(pk)
+        bulletin.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

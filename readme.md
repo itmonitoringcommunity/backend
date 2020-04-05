@@ -36,3 +36,14 @@ http://127.0.0.1:8000/states/
 http://127.0.0.1:8000/bulletins/
 
 ```
+
+
+## FORTH
+
+```
+
+docker build -t backend .
+docker run -it backend
+docker rmi backend .
+
+```
