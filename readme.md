@@ -29,5 +29,10 @@ admin
 python manage.py runserver
 http://127.0.0.1:8000/admin/login/
 
+http://127.0.0.1:8000/api/
+http://127.0.0.1:8000/types/
+http://127.0.0.1:8000/priorities/
+http://127.0.0.1:8000/states/
+http://127.0.0.1:8000/bulletins/
 
 ```
