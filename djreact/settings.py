@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'bulletins',
     'priorities',
     'states',
-    'btypes'
+    'btypes',
+    'mails'
 ]
 
 MIDDLEWARE = [

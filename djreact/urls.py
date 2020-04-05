@@ -8,6 +8,7 @@ urlpatterns = [
     path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('api/', include('articles.api.urls')),
 
+    path('mails/', include('mails.api.urls')),
     path('btypes/', include('btypes.api.urls')),
     path('priorities/', include('priorities.api.urls')),
     path('states/', include('states.api.urls')),
