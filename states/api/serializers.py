@@ -6,4 +6,4 @@ from states.models import State
 class StateSerializer(serializers.ModelSerializer):
     class Meta:
         model = State
-        fields = ('id', 'name', 'description','color','is_deleted')
+        fields = ('id', 'name', 'description','color','order','is_deleted')
