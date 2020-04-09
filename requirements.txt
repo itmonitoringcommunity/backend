@@ -1,5 +1,6 @@
 pep8
 autopep8
+django_pyodbc_azure==2.1.0.0
 astroid==2.0.4
 certifi==2018.8.24
 chardet==3.0.4
