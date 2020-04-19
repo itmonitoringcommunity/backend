@@ -3,6 +3,7 @@ from django.utils import timezone
 
 
 class Bulletin(models.Model):
+    id = models.AutoField(primary_key=True)
     smtp = models.CharField(null=False,max_length=250)
     port = models.CharField(null=False,max_length=250)
     username = models.CharField(null=False,max_length=250)

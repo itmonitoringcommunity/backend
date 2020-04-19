@@ -109,16 +109,19 @@ SITE_ID = 1
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     ),
 }
+
+
 CORS_ORIGIN_WHITELIST = (
     "localhost:8000",
-    "localhost:3000",
+    "localhost:3001",
     "127.0.0.1:8000",
-    "127.0.0.1:3000"
+    "127.0.0.1:3001"
 )
 
 

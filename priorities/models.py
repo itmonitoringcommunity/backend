@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Priority(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(null=True,max_length=250)
     description = models.TextField(blank=True)
     order = models.IntegerField(default=0)
