@@ -12,42 +12,38 @@ class CustomBulletin():
         self.htmltext = '''
         <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bulletin</title>
 </head>
-
 <body style="text-align: center;">
     <div style="display: inline-block; " id="root">
         <table border="1" width="500px">
             <tr>
                 <td colspan="2" style="margin: 10px; padding: 10px; text-align: right;">
-                    {bulletin.insert_time}
+                    {0.insert_time}
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="margin: 10px; padding: 10px;  text-align: center;">
-                    <span style="color: {bulletin.color}; font-weight: bold;">{bulletin.code} - {bulletin.title}</span>
+                    <span style="color: {0.color}; font-weight: bold;">{0.code} - {0.title}</span>
                 </td>
             </tr>
-
             <tr>
                 <td style=" text-align: left; margin: 10px; padding: 10px; width: 150px;">
                     Type
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.btype}
+                    {0.btype}
                 </td>
             </tr>
-
             <tr>
                 <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
                     Created By
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px; ">
-                    {bulletin.created_by}
+                    {0.created_by}
                 </td>
             </tr>
             <tr>
@@ -55,7 +51,7 @@ class CustomBulletin():
                     Detail
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.detail}
+                    {0.detail}
                 </td>
             </tr>
             <tr>
@@ -63,7 +59,7 @@ class CustomBulletin():
                     Effect
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.effect}
+                    {0.effect}
                 </td>
             </tr>
             <tr>
@@ -71,7 +67,7 @@ class CustomBulletin():
                     Contact
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.contact}
+                    {0.contact}
                 </td>
             </tr>
             <tr>
@@ -79,7 +75,7 @@ class CustomBulletin():
                     Begin Time
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.begin_time}
+                    {0.begin_time}
                 </td>
             </tr>
             <tr>
@@ -87,15 +83,16 @@ class CustomBulletin():
                     End Time
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.end_time}
+                    {0.end_time}
                 </td>
             </tr>
             <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
+                <td style="text-align: left; margin: 10px; padding: 10px; width: 
+                150px;">
                     Duration
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.duration} (Min.)
+                    {0.duration} (Min.)
                 </td>
             </tr>
             <tr>
@@ -103,7 +100,7 @@ class CustomBulletin():
                     Ticket Case Id
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    <a href="{bulletin.ticket_case_url}" style="text-decoration:none;"> {bulletin.ticket_case_id}</a>
+                    <a href="{0.ticket_case_url}" style="text-decoration:none;"> {0.ticket_case_id}</a>
                 </td>
             </tr>
             <tr>
@@ -111,77 +108,27 @@ class CustomBulletin():
                     Priority
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.priority}
+                    {0.priority}
                 </td>
             </tr>
             <tr>
                 <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
                     State
                 </td>
-                <td style="text-align: left; margin: 10px; padding: 10px; color: #ffffff; background-color: {kwargs[color]};">
-                    <span> {bulletin.state} </span>
+                <td style="text-align: left; margin: 10px; padding: 10px; color: #ffffff; background-color: {0.color};">
+                    <span> {0.state} </span>
                 </td>
             </tr>
         </table>
-
         <br />
-
-        <table border="1" width="500px">
-            <tr>
-                <td colspan="2" style="margin: 10px; padding: 10px; text-align: right;">
-                    {bulletin.resolved_time}
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"
-                    style="color:#ffffff; background-color: #1985ac; margin: 10px; padding: 10px;  text-align: center; ">
-                    <span style=" font-weight: bold;">Resolution</span>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
-                    Resolved By
-                </td>
-                <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.resolved_by}
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
-                    Temporary Solution
-                </td>
-                <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.temporary_solution}
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
-                    Permanent_solution
-                </td>
-                <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.permanent_solution}
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
-                    Root Cause
-                </td>
-                <td style=" text-align: left; margin: 10px; padding: 10px;">
-                    {bulletin.root_cause}
-                </td>
-            </tr>
-
-        </table>
-        <br />
+        
         © 2020 smiley-py, Inc.
     </div>
-
 </body>
-
 </html>
-'''.format(kwargs=kwargs_bulletin)
+'''.format(bulletin)
 
-    def send_bulletin(self):
+    def send_bulletin(self,bulletin):
         self.set_bulletin_text(bulletin)
 
         kwargs_mail = {
@@ -193,8 +140,8 @@ class CustomBulletin():
             'cclist': str(bulletin.cclist),
             'bcclist': str(bulletin.bcclist),
             'subject': str(bulletin.code) + str(' - ') + str(bulletin.title),
-            'body': self.htmltext
+            'body': str(self.htmltext)
         }
 
         mail.send_mail(kwargs_mail)
-        print(mail.msg)
+        self.msg = mail.msg

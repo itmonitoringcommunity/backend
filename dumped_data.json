@@ -593,6 +593,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "p1v1my4tlkjanxlbsyjumkod57n9mq5t",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-04T08:36:25.657Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "pe5ua4oixv3ls6ezjk6uipb74i4x2v6c",
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
@@ -605,6 +613,14 @@
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
         "expire_date": "2020-05-03T08:11:20.767Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q8260cqthz6tz9dhrluecueql4qun3sz",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-07T13:11:26.554Z"
     }
 },
 {
@@ -850,7 +866,7 @@
         "ticket_case_url": "#",
         "ticket_case_id": "IR202002",
         "resolved_time": "2020-04-09T16:04:48Z",
-        "is_resolved": "0",
+        "is_resolved": "1",
         "resolved_by": "admin",
         "temporary_solution": "",
         "permanent_solution": "",
@@ -887,7 +903,7 @@
         "ticket_case_url": "#",
         "ticket_case_id": "IR202002",
         "resolved_time": "2020-04-09T16:04:48Z",
-        "is_resolved": "0",
+        "is_resolved": "1",
         "resolved_by": "admin",
         "temporary_solution": "",
         "permanent_solution": "",
@@ -1811,7 +1827,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$120000$GFPvGbeMu4yR$0l2tpWsVt/8S5GuazR4t54lcBgS/1lrB5Zd0IJbSCVg=",
-        "last_login": "2020-04-19T08:26:26.894Z",
+        "last_login": "2020-04-23T13:11:26.544Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",

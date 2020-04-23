@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.abspath('pylibs')), 'pylibs'))
 
 from pylibs import CustomBulletin
-blt = CustomBulletin()
+cblt = CustomBulletin()
 
 from rest_framework import permissions
 from rest_framework.generics import (
@@ -27,17 +27,54 @@ from rest_framework import status
 
 from bulletins.models import Bulletin
 from .serializers import BulletinSerializer
+from rest_framework import filters
+from rest_framework.pagination import PageNumberPagination
 
+class CustomPagination(PageNumberPagination):
+    page_size = 2
+    page_size_query_param = 'page_size'
+    max_page_size = 1000
+
+    def get_paginated_response(self, data):
+        return Response({
+            'links': {
+                'next': 'http://127.0.0.1:3001/bulletin/index.html?page='+str(self.page.number+1),
+                'previous': 'http://127.0.0.1:3001/bulletin/index.html?page='+str(self.page.number-1)
+            },
+            'count': self.page.paginator.count,
+            'page_size': self.page_size,
+            'results': data
+        })
+
+class NotPaginatedSetPagination(PageNumberPagination):
+    page_size = None
 
 class BulletinListView(ListAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['^code', '^title']
+
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = ['begin_time']
+    ordering = ['-begin_time']
+
+    pagination_class = CustomPagination
+
     permission_classes = (permissions.IsAuthenticated, )
 
 
 class BulletinDetailView(RetrieveAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['^code', '^title']
+
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = ['begin_time']
+    ordering = ['-begin_time']
+
+    pagination_class = NotPaginatedSetPagination 
     permission_classes = (permissions.IsAuthenticated, )
 
 
@@ -70,9 +107,9 @@ class BulletinSendView(APIView):
 
     def get(self, request, pk, format=None):
         bulletin = self.get_object(pk)
-        blt.sendbulletin(bulletin)
+        cblt.send_bulletin(bulletin)
         serializer_class = BulletinSerializer
-        return Response(serializer_class.data)
+        return Response({'message': str(cblt.msg) })
 
     def put(self, request, pk, format=None):
         bulletin = self.get_object(pk)
