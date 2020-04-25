@@ -1,9 +1,10 @@
-from rest_framework import serializers
+from rest_framework import serializers,fields
 
 from bulletins.models import Bulletin
  
 
 class BulletinSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Bulletin
         fields = ('id', 'smtp', 'port','username','password','tolist','cclist','bcclist',

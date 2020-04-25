@@ -41,6 +41,7 @@ class CustomPagination(PageNumberPagination):
                 'next': 'http://127.0.0.1:3001/bulletin/index.html?page='+str(self.page.number+1),
                 'previous': 'http://127.0.0.1:3001/bulletin/index.html?page='+str(self.page.number-1)
             },
+            'current': self.page.number,
             'count': self.page.paginator.count,
             'page_size': self.page_size,
             'results': data
@@ -51,26 +52,25 @@ class NotPaginatedSetPagination(PageNumberPagination):
 
 class BulletinListView(ListAPIView):
     queryset = Bulletin.objects.all()
-    serializer_class = BulletinSerializer
-    filter_backends = [filters.SearchFilter]
-    search_fields = ['^code', '^title']
+    serializer_class = BulletinSerializer 
 
-    filter_backends = [filters.OrderingFilter]
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['code', 'title']       
+
     ordering_fields = ['begin_time']
     ordering = ['-begin_time']
 
     pagination_class = CustomPagination
-
     permission_classes = (permissions.IsAuthenticated, )
 
 
 class BulletinDetailView(RetrieveAPIView):
     queryset = Bulletin.objects.all()
-    serializer_class = BulletinSerializer
-    filter_backends = [filters.SearchFilter]
-    search_fields = ['^code', '^title']
+    serializer_class = BulletinSerializer 
+    
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['code', 'title']       
 
-    filter_backends = [filters.OrderingFilter]
     ordering_fields = ['begin_time']
     ordering = ['-begin_time']
 
@@ -82,6 +82,7 @@ class BulletinCreateView(CreateAPIView):
     queryset = Bulletin.objects.all()
     serializer_class = BulletinSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    
 
 
 class BulletinUpdateView(UpdateAPIView):

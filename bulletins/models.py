@@ -28,7 +28,7 @@ class Bulletin(models.Model):
     end_time = models.DateTimeField(null=True,blank=True,default=timezone.now)
     duration = models.IntegerField(default='0')
 
-    ticket_case_url = models.CharField(default='#', max_length=250)
+    ticket_case_url = models.CharField(default='#',blank=True,max_length=250)
     ticket_case_id = models.CharField(null=True,blank=True,max_length=250)
 
     resolved_time = models.DateTimeField(null=True,blank=True,default=timezone.now)
