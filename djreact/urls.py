@@ -13,6 +13,7 @@ urlpatterns = [
     path('priorities/', include('priorities.api.urls')),
     path('states/', include('states.api.urls')),
     path('bulletins/', include('bulletins.api.urls')),
+    path('agents/', include('agents.api.urls')),
 
     path('admin/', admin.site.urls),
     re_path(r'^.*', TemplateView.as_view(template_name='index.html')),

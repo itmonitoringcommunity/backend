@@ -28,7 +28,8 @@ INSTALLED_APPS = [
     'priorities',
     'states',
     'btypes',
-    'mails'
+    'mails',
+    'agents'
 ]
 
 MIDDLEWARE = [

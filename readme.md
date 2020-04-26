@@ -38,8 +38,8 @@ http://127.0.0.1:8000/types/
 http://127.0.0.1:8000/priorities/
 http://127.0.0.1:8000/states/
 http://127.0.0.1:8000/bulletins/
+http://127.0.0.1:8000/agents/
 
-curl -X GET http://127.0.0.1:8000/bulletins/ -H 'Authorization: Token af21c083e437b364c0cd1c60df725d63c9cd8dc4'
 
 
 ```

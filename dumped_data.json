@@ -152,6 +152,14 @@
     }
 },
 {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "agents",
+        "model": "agent"
+    }
+},
+{
     "model": "sessions.session",
     "pk": "0iw2tda0z5gpuu48s4mn1ya96njb1njm",
     "fields": {
@@ -281,6 +289,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "6k242lhuoogec9dny4f1hvdlv9tdtj7d",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-07T20:24:22.199Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "6qxlbmqrst4y28r4vizumujpcylxxx11",
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
@@ -349,6 +365,14 @@
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
         "expire_date": "2020-05-02T16:37:15.412Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9xjzy6igpkyu0f9hj12y6c1vrclkv554",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-10T17:30:08.529Z"
     }
 },
 {
@@ -553,6 +577,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "lzrkox1r0hvyifihr82azpsnkv4vgxob",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-07T20:24:22.193Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "m2mjqqdqcch6zbjakdxhoa8l513k7jua",
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
@@ -713,6 +745,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "svecuzt6gplskbv7okei7v11b3dx9dv1",
+    "fields": {
+        "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
+        "expire_date": "2020-05-07T20:24:24.516Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "t8qlkkr27k95jgjnntfhat0k6c2y5med",
     "fields": {
         "session_data": "MDk0YjYxNDJkNWY3ZGQ3MzliNDQ4ZmE3NDAzNjI2MmY3MWU2OTRkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MGU1MTJmNjk5MThiZmZmMDU5YzE2YzFkNTQ5NWJkZjI4YjIxZTA0In0=",
@@ -853,7 +893,7 @@
         "btype": "Planned Maintenance",
         "priority": "Medium",
         "state": "Done",
-        "color": "#000000",
+        "color": "#2eb85c",
         "created_by": "admin",
         "code": "BLT20023",
         "title": "test3",
@@ -873,6 +913,7 @@
         "root_cause": "",
         "insert_time": "2020-04-09T16:04:48Z",
         "modify_time": "2020-04-09T16:04:48Z",
+        "is_automated": "0",
         "is_deleted": "0"
     }
 },
@@ -890,7 +931,7 @@
         "btype": "Outage",
         "priority": "Medium",
         "state": "Done",
-        "color": "#000000",
+        "color": "#2eb85c",
         "created_by": "admin",
         "code": "BLT20024",
         "title": "test4",
@@ -910,6 +951,7 @@
         "root_cause": "",
         "insert_time": "2020-04-09T16:04:48Z",
         "modify_time": "2020-04-09T16:04:48Z",
+        "is_automated": "0",
         "is_deleted": "0"
     }
 },
@@ -927,7 +969,7 @@
         "btype": "Outage",
         "priority": "Medium",
         "state": "Started",
-        "color": "#000000",
+        "color": "#e55353",
         "created_by": "admin",
         "code": "BLT20025",
         "title": "test5",
@@ -947,6 +989,7 @@
         "root_cause": "",
         "insert_time": "2020-04-09T16:04:48Z",
         "modify_time": "2020-04-09T16:04:48Z",
+        "is_automated": "0",
         "is_deleted": "0"
     }
 },
@@ -964,7 +1007,7 @@
         "btype": "Urgent Maintenance",
         "priority": "Medium",
         "state": "Scheduled",
-        "color": "#000000",
+        "color": "#f9b115",
         "created_by": "admin",
         "code": "BLT20026",
         "title": "test6",
@@ -984,6 +1027,273 @@
         "root_cause": "",
         "insert_time": "2020-04-09T16:04:48Z",
         "modify_time": "2020-04-09T16:04:48Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 6,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Outage",
+        "priority": "Low",
+        "state": "Started",
+        "color": "#000000",
+        "created_by": "Admin",
+        "code": "blt20030",
+        "title": "title",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-24T21:41:00Z",
+        "end_time": "2020-04-24T22:41:00Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "ID",
+        "resolved_time": "2020-04-24T23:41:00Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-24T21:41:00Z",
+        "modify_time": "2020-04-24T21:41:00Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 7,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#000000",
+        "created_by": "Admin",
+        "code": "blt20030",
+        "title": "test7",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-24T21:41:00Z",
+        "end_time": "2020-04-24T22:41:00Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "ID",
+        "resolved_time": "2020-04-24T23:41:00Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-24T21:41:00Z",
+        "modify_time": "2020-04-24T21:41:00Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 8,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#000000",
+        "created_by": "Admin",
+        "code": "blt20030",
+        "title": "title",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-24T21:41:00Z",
+        "end_time": "2020-04-24T22:41:00Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "",
+        "resolved_time": "2020-04-24T23:41:00Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-24T21:41:00Z",
+        "modify_time": "2020-04-24T21:41:00Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 9,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#000000",
+        "created_by": "Admin",
+        "code": "blt20030",
+        "title": "title 2",
+        "detail": "detail 2",
+        "effect": "effect 2",
+        "contact": "contact 2",
+        "begin_time": "2020-04-24T21:41:00Z",
+        "end_time": "2020-04-24T22:41:00Z",
+        "duration": 60,
+        "ticket_case_url": "",
+        "ticket_case_id": "",
+        "resolved_time": "2020-04-24T23:41:00Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-24T21:41:00Z",
+        "modify_time": "2020-04-24T21:41:00Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 10,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#f9b115",
+        "created_by": "Admin",
+        "code": "BLT20058",
+        "title": "title",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-25T15:32:48Z",
+        "end_time": "2020-04-25T15:32:51Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "ID",
+        "resolved_time": "2020-04-25T15:33:39Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-25T15:33:39Z",
+        "modify_time": "2020-04-25T15:33:39Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 11,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#f9b115",
+        "created_by": "Admin",
+        "code": "BLT20059",
+        "title": "title",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-25T15:51:13Z",
+        "end_time": "2020-04-25T15:51:17Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "ID",
+        "resolved_time": "2020-04-25T15:51:31Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-25T15:51:31Z",
+        "modify_time": "2020-04-25T15:51:31Z",
+        "is_automated": "0",
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "bulletins.bulletin",
+    "pk": 12,
+    "fields": {
+        "smtp": "smtp.gmail.com",
+        "port": "587",
+        "username": "itmonitoringcommunity@gmail.com",
+        "password": "MonitoringCommunity18",
+        "tolist": "oguzkaragoz@gmail.com",
+        "cclist": "itmonitoringcommunity@gmail.com",
+        "bcclist": "",
+        "btype": "Planned Maintenance",
+        "priority": "Low",
+        "state": "Scheduled",
+        "color": "#f9b115",
+        "created_by": "Admin",
+        "code": "BLT20060",
+        "title": "title",
+        "detail": "detail",
+        "effect": "effect",
+        "contact": "contact",
+        "begin_time": "2020-04-25T16:43:15Z",
+        "end_time": "2020-04-25T17:43:18Z",
+        "duration": 60,
+        "ticket_case_url": "#",
+        "ticket_case_id": "ID",
+        "resolved_time": "2020-04-25T16:43:30Z",
+        "is_resolved": "0",
+        "resolved_by": "",
+        "temporary_solution": "",
+        "permanent_solution": "",
+        "root_cause": "",
+        "insert_time": "2020-04-25T16:43:30Z",
+        "modify_time": "2020-04-25T16:43:30Z",
+        "is_automated": "0",
         "is_deleted": "0"
     }
 },
@@ -1033,7 +1343,7 @@
     "fields": {
         "name": "Scheduled",
         "description": "desc",
-        "color": "#000000",
+        "color": "#f9b115",
         "order": 1,
         "is_deleted": "0"
     }
@@ -1042,9 +1352,9 @@
     "model": "states.state",
     "pk": 2,
     "fields": {
-        "name": "Start",
+        "name": "Started",
         "description": "desc",
-        "color": "#000000",
+        "color": "#e55353",
         "order": 2,
         "is_deleted": "0"
     }
@@ -1055,7 +1365,7 @@
     "fields": {
         "name": "Done",
         "description": "desc",
-        "color": "#000000",
+        "color": "#2eb85c",
         "order": 3,
         "is_deleted": "0"
     }
@@ -1066,7 +1376,7 @@
     "fields": {
         "name": "Rollback",
         "description": "desc",
-        "color": "#000000",
+        "color": "#321fdb",
         "order": 4,
         "is_deleted": "0"
     }
@@ -1077,7 +1387,7 @@
     "fields": {
         "name": "Cancel",
         "description": "desc",
-        "color": "#000000",
+        "color": "#ced2d8",
         "order": 5,
         "is_deleted": "0"
     }
@@ -1135,6 +1445,21 @@
         "tolist": "oguzkaragoz@gmail.com",
         "cclist": "itmonitoringcommunity@gmail.com",
         "bcclist": null,
+        "is_deleted": "0"
+    }
+},
+{
+    "model": "agents.agent",
+    "pk": 1,
+    "fields": {
+        "name": "test_agent_1",
+        "description": "",
+        "path": "d:/git5/zagent/test.bat",
+        "delay": 10,
+        "output": "",
+        "result": "0",
+        "start_time": "2020-04-26T17:30:17Z",
+        "is_scheduled": "0",
         "is_deleted": "0"
     }
 },
@@ -1823,19 +2148,55 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add agent",
+        "content_type": 20,
+        "codename": "add_agent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change agent",
+        "content_type": 20,
+        "codename": "change_agent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete agent",
+        "content_type": 20,
+        "codename": "delete_agent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view agent",
+        "content_type": 20,
+        "codename": "view_agent"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$120000$GFPvGbeMu4yR$0l2tpWsVt/8S5GuazR4t54lcBgS/1lrB5Zd0IJbSCVg=",
-        "last_login": "2020-04-23T13:11:26.544Z",
+        "last_login": "2020-04-26T17:30:08.515Z",
         "is_superuser": true,
         "username": "admin",
-        "first_name": "",
-        "last_name": "",
-        "email": "admin@a.com",
+        "first_name": "Oguz Burak",
+        "last_name": "Karagoz",
+        "email": "oguzkaragoz@gmail.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2020-04-09T15:57:11.898Z",
+        "date_joined": "2020-04-09T15:57:11Z",
         "groups": [],
         "user_permissions": []
     }
@@ -1857,6 +2218,149 @@
         "content_type": 15,
         "object_id": "1",
         "object_repr": "BLT20023 - test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-04-24T16:22:49.849Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Done",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-04-24T16:23:10.844Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Scheduled",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-04-24T16:23:33.150Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Started",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-04-24T16:24:04.283Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Cancel",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-04-24T16:24:46.276Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Rollback",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-04-24T16:26:23.864Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "BLT20026 - test6",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-04-24T16:26:45.809Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "BLT20025 - test5",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-04-24T16:27:03.471Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "BLT20024 - test4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-04-24T16:27:15.594Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "BLT20023 - test3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"color\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-04-25T10:37:08.814Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-04-26T17:31:09.322Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "test_agent_1",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }

@@ -12,12 +12,15 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='BType',
+            name='Agent',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('name', models.CharField(max_length=250, null=True)),
                 ('description', models.TextField(blank=True)),
-                ('order', models.IntegerField(default=0)),
+                ('path', models.CharField(blank=True, max_length=250, null=True)),
+                ('delay', models.IntegerField(default=10)),
+                ('output', models.TextField(blank=True)),
+                ('result', models.CharField(blank=True, max_length=250, null=True)),
                 ('is_deleted', models.CharField(default='0', max_length=1)),
             ],
         ),
