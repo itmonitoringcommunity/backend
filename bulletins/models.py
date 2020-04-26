@@ -40,6 +40,7 @@ class Bulletin(models.Model):
     
     insert_time = models.DateTimeField(null=True,default=timezone.now)
     modify_time = models.DateTimeField(null=True,default=timezone.now)
+    is_automated = models.CharField(default='0',max_length=1)
     is_deleted = models.CharField(default='0',max_length=1)
     
     def __str__(self):

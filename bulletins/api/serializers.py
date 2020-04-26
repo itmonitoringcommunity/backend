@@ -13,5 +13,5 @@ class BulletinSerializer(serializers.ModelSerializer):
         'begin_time','end_time','duration',
         'ticket_case_url','ticket_case_id',
         'resolved_time','is_resolved','resolved_by','temporary_solution','permanent_solution','root_cause',
-        'insert_time','modify_time','is_deleted'
+        'insert_time','modify_time','is_automated','is_deleted'
         )
