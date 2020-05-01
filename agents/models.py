@@ -5,8 +5,12 @@ class Agent(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(null=True,max_length=250)
     description = models.TextField(blank=True)
-    path = models.CharField(null=True,blank=True,max_length=250)
-    delay = models.IntegerField(default=10)    
+    path = models.CharField(default='executor.bat',max_length=250)
+
+    script_content = models.TextField(default='call "test.bat"')
+    script_inputs = models.CharField(default='Y',max_length=250)
+
+    delay = models.IntegerField(default=30)    
     output = models.TextField(blank=True)
     result = models.CharField(default='0',max_length=1)
 
