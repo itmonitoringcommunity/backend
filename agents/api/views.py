@@ -12,6 +12,12 @@ from rest_framework.generics import (
     DestroyAPIView,
     UpdateAPIView
 )
+
+from django.http import Http404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+
 from agents.models import Agent
 from .serializers import AgentSerializer
 from rest_framework import filters
@@ -41,18 +47,20 @@ class NotPaginatedSetPagination(PageNumberPagination):
 class AgentListView(ListAPIView):
     queryset = Agent.objects.all()
     serializer_class = AgentSerializer
-    filter_backends = [filters.OrderingFilter]
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['name'] 
     ordering_fields = ['name']
     ordering = ['name']
     
-    pagination_class = NotPaginatedSetPagination 
+    pagination_class = CustomPagination 
     permission_classes = (permissions.IsAuthenticated, )
 
 
 class AgentDetailView(RetrieveAPIView):
     queryset = Agent.objects.all()
     serializer_class = AgentSerializer
-    filter_backends = [filters.OrderingFilter]
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['name']
     ordering_fields = ['name']
     ordering = ['name']
     
