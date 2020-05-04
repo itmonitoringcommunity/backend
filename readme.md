@@ -45,6 +45,18 @@ http://127.0.0.1:8000/agents/
 ```
 
 
+## THIRD
+
+Enable gmail smtp settings
+
+https://mail.google.com/mail/u/0/#settings/fwdandpop
+
+https://myaccount.google.com/lesssecureapps
+
+https://accounts.google.com/DisplayUnlockCaptcha
+
+
+
 ## FORTH
 
 ```
