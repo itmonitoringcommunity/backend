@@ -31,7 +31,7 @@ from rest_framework import filters
 from rest_framework.pagination import PageNumberPagination
 
 class CustomPagination(PageNumberPagination):
-    page_size = 2
+    page_size = 20
     page_size_query_param = 'page_size'
     max_page_size = 1000
 
@@ -55,7 +55,7 @@ class BulletinListView(ListAPIView):
     serializer_class = BulletinSerializer 
 
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['code', 'title']       
+    search_fields = ['code', 'title', 'state']       
 
     ordering_fields = ['begin_time']
     ordering = ['-begin_time']
@@ -69,7 +69,7 @@ class BulletinDetailView(RetrieveAPIView):
     serializer_class = BulletinSerializer 
     
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['code', 'title']       
+    search_fields = ['code', 'title', 'state']     
 
     ordering_fields = ['begin_time']
     ordering = ['-begin_time']

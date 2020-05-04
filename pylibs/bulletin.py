@@ -87,8 +87,7 @@ class CustomBulletin():
                 </td>
             </tr>
             <tr>
-                <td style="text-align: left; margin: 10px; padding: 10px; width: 
-                150px;">
+                <td style="text-align: left; margin: 10px; padding: 10px; width: 150px;">
                     Duration
                 </td>
                 <td style=" text-align: left; margin: 10px; padding: 10px;">
@@ -121,7 +120,6 @@ class CustomBulletin():
             </tr>
         </table>
         <br />
-        
         © 2020 smiley-py, Inc.
     </div>
 </body>
